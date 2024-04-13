@@ -1,0 +1,37 @@
+Selenium Interview Questions:
+
+Interviewer: Let's start with the framework you've worked on. Could you tell me about it?
+
+You: Certainly. I've primarily worked on a modular-driven automation framework using Java, TestNG, and Selenium WebDriver. The aim was to create a scalable, maintainable, and easily understandable framework for both technical and non-technical team members. 
+*You can add more details about the framework.
+
+Interviewer: Interesting. In such frameworks, challenges are inevitable. Can you share a specific challenge you faced and how you overcame it?
+
+You: One notable challenge was dealing with dynamic elements, which frequently changed their attributes. To tackle this, we implemented dynamic waits using WebDriverWait along with ExpectedConditions to wait for elements until they stabilized.
+
+Interviewer: Handling dynamic elements is crucial indeed. Apart from Selenium's built-in methods, how did you handle dynamic variables?
+
+You: Besides relying on Selenium's methods, we incorporated custom logic. This involved using regular expressions, string manipulation, and dynamic XPath/CSS selectors to locate elements based on changing attributes or text.
+
+Interviewer: Moving on to browser tabs, how did you handle multiple tabs in Selenium?
+
+You: For handling multiple tabs, we utilized WebDriver's window handles. By using getWindowHandles() to get handles of all open windows, we could then switch between tabs using the switchTo() method.
+
+
+Interviewer: Good. Now, which interface or class does getWindowHandles() belong to?
+
+You: getWindowHandles() belongs to the WebDriver interface in Selenium.
+
+Interviewer: Excellent. Let's talk about dealing with multiple products in a web table, like on Amazon. How would you approach selecting one product and adding it to the cart?
+
+You: First, we'd locate the web table containing products using its unique identifier. Then, by iterating through the rows and columns, we'd identify the desired product based on specific criteria such as product name or ID.
+
+Interviewer: Great approach. Lastly, could you explain the exceptions thrown by findElement and findElements methods in Selenium?
+
+You: Certainly. Both findElement and findElements throw a NoSuchElementException when the element being searched for is not found in the DOM.
+
+Interviewer: And what about the StaleElementReferenceException? Can you explain it with an example and how to handle it?
+
+You: A StaleElementReferenceException occurs when the element is no longer attached to the DOM, often due to a page refresh or navigation. For instance, if an element is located and stored, but the page changes, attempting to interact with the stored element will trigger this exception. To overcome it, we typically re-locate the element or refresh the page before interacting with it again.
+
+Interviewer: Thank you for your detailed responses. It was a pleasure discussing your experience with automation testing.
