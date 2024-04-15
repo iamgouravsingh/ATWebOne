@@ -35,3 +35,43 @@ Interviewer: And what about the StaleElementReferenceException? Can you explain 
 You: A StaleElementReferenceException occurs when the element is no longer attached to the DOM, often due to a page refresh or navigation. For instance, if an element is located and stored, but the page changes, attempting to interact with the stored element will trigger this exception. To overcome it, we typically re-locate the element or refresh the page before interacting with it again.
 
 Interviewer: Thank you for your detailed responses. It was a pleasure discussing your experience with automation testing.
+
+
+Hello Guys, If you are preparing for Java-Selenium interview then I have listed out few common set of questions which helps to crack the interviews
+#SeleniumInterviewPreparation #SeleniumJava #MostRecentSeleniumInterviewQuestions 
+
+1 How do you handle windows and tabs?
+2 How do you handle iframes?
+3 Diff between FindElement and FindElements.
+4 Explain Different locators in selenium
+5 Explain diff waits in Selenium/ diff between implicit and explicit wait.
+6 How do you handle dynamic elements in Selenium WebDriver?
+7 Tell me some exceptions you have faced while writing the framework.
+8 Diff between driver.close() and driver.quit().
+9 Diff assertions in selenium(assert.assertEquals,assertTrue etc)
+10 Write a code snippet to launch Firefox browser in WebDriver.
+11.What are the different types of navigation commands?
+12 How do you handle mouse actions in selenium and also write me the code for that ?
+13 How do you handle alerts in Selenium and also write me the code?
+14 How can you find if an element is displayed on the screen? (like using isDisplayed, isEnabled etc)
+15 What is Page Object Model and how have you implemented in your framework and explain the same.
+16 What is Page Factory in Selenium?
+17 Explain the concept of DesiredCapabilities and how they are used in Selenium WebDriver.
+18 How do you handle windows and tabs?**
+19 How do you handle iframes?**
+20 Diff between FindElement and FindElements.**
+21 Explain Different locators in selenium.**
+22 Explain diff waits in Selenium/ diff between implicit and explicit wait.**
+23 How do you handle dynamic elements in Selenium WebDriver?**
+24 Tell me some exceptions you have faced while writing the framework.**
+25 Diff between driver.close() and driver.quit().**
+26 Diff assertions in selenium (assert.assertEquals, assertTrue, etc).**
+27 Write a code snippet to launch Firefox browser in WebDriver.**
+28 How do you handle mouse actions in selenium and also write me the code for that?**
+29 What are the different types of navigation commands?** 
+30 How do you handle alerts in Selenium and also write me the code?**
+31 How can you find if an element is displayed on the screen?**
+32 What is Page Object Model and how have you implemented it in your framework?
+33 What is Page Factory in Selenium?
+34 Explain the concept of DesiredCapabilities and how they are used in Selenium WebDriver.
+35 How would you deal with flaky tests in your Selenium automation suite using TestNG?
