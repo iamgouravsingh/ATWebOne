@@ -41,12 +41,66 @@ Hello Guys, If you are preparing for Java-Selenium interview then I have listed 
 #SeleniumInterviewPreparation #SeleniumJava #MostRecentSeleniumInterviewQuestions 
 
 1 How do you handle windows and tabs?
+'getWindowHandles(), switchTo(), and close() methods. Here's how you can handle windows and tabs:
+Set<String> windowHandles = driver.getWindowHandles();
+
+
 2 How do you handle iframes?
+Use the switchTo().frame() method to switch to the iframe by specifying one of the following:
+Index: Switch to the iframe by its index (starting from 0).
+Name or ID: Switch to the iframe by its name or ID attribute value.
+WebElement: Switch to the iframe using a WebElement representing the iframe.
+
+// Switch to the iframe by index
+driver.switchTo().frame(0);
+
+// Switch to the iframe by name or ID
+driver.switchTo().frame("iframeNameOrId");
+
+// Switch to the iframe by WebElement
+WebElement iframeElement = driver.findElement(By.tagName("iframe"));
+driver.switchTo().frame(iframeElement);
+
+
 3 Diff between FindElement and FindElements.
+
 4 Explain Different locators in selenium
+ID
+Xpath
+CSS Selector
+name
+Class Name
+Tag Name
+Link Text
+Partial Link Text
+
+
 5 Explain diff waits in Selenium/ diff between implicit and explicit wait.
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+WebDriverWait wait = new WebDriverWait(driver, 10);
+WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("someId")));
+
 6 How do you handle dynamic elements in Selenium WebDriver?
+Implicit and Explicit Waits
+ExpectedConditions
+Dynamic Locators - xpath & css selector
+Retry Mechanisms
+Stale Element Reference Exception Handling
+
 7 Tell me some exceptions you have faced while writing the framework.
+NoSuchElementException
+TimeoutException
+StaleElementReferenceException
+ElementNotInteractableException
+ElementNotVisibleException
+NoSuchWindowException
+NoSuchFrameException
+UnhandledAlertException
+SessionNotCreatedException
+WebDriverException
+Handling these exceptions appropriately in your framework can improve its robustness and reliability, ensuring smoother execution of your Selenium tests.
+
 8 Diff between driver.close() and driver.quit().
 9 Diff assertions in selenium(assert.assertEquals,assertTrue etc)
 10 Write a code snippet to launch Firefox browser in WebDriver.
