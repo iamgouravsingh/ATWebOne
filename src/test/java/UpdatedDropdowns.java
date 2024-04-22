@@ -14,6 +14,10 @@ public class UpdatedDropdowns {
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+        driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
+        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+        System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 
         driver.findElement(By.id("divpaxinfo")).click();
 
