@@ -17,7 +17,9 @@ public class AddToCardDynamically {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-        String[] itemNeeded = {"Cucumber", "Brocolli", "Beetroot"};
+        String[] itemNeeded = {"Cucumber", "Brocolli", "Beetroot", "Brinjal"};
+
+        int j = 0;
 
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 
@@ -30,12 +32,10 @@ public class AddToCardDynamically {
 
             List itemNeededList = Arrays.asList(itemNeeded);
 
-            int j = 0;
-
             if (itemNeededList.contains(formattedName)) {
                 j++;
                 driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
-                if (j == 3) {
+                if (j == itemNeeded.length) {
                     break;
                 }
             }
