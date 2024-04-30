@@ -18,11 +18,13 @@ public class AlertHandling {
 
         driver.findElement(By.id("alertbtn")).click();
 
-        driver.switchTo().alert().getText();
+        System.out.println(driver.switchTo().alert().getText());
 
         driver.switchTo().alert().accept();
 
+        driver.findElement(By.id("confirmbtn")).click();
 
+        driver.switchTo().alert().dismiss();
 
 
     }

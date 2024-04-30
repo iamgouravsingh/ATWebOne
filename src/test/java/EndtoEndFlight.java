@@ -29,11 +29,10 @@ public class EndtoEndFlight {
         //driver.findElement(By.name("ctl00$mainContent$view_date2")).click();
         System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
 
-        if(driver.findElement(By.id("Div1")).getAttribute("style").contains("1"))
-        {
+        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("1")) {
             System.out.println("Is disabled");
             Assert.assertTrue(false);
-        }else {
+        } else {
             Assert.assertTrue(true);
         }
 
@@ -42,16 +41,14 @@ public class EndtoEndFlight {
         driver.findElement(By.id("divpaxinfo")).click();
         Thread.sleep(2000);
 
-        for(int i =1; i<=2; i++) {
+        for (int i = 1; i <= 2; i++) {
             driver.findElement(By.id("hrefIncAdt")).click();
         }
         driver.findElement(By.id("btnclosepaxoption")).click();
-        Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(),"3 Adult");
+        Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "3 Adult");
         System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 
         driver.findElement(By.xpath("//input[@type='submit']")).click();
-
-
 
 
     }

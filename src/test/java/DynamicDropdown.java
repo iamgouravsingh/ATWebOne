@@ -23,13 +23,12 @@ public class DynamicDropdown {
         driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();
 
         //driver.findElement(By.name("ctl00$mainContent$view_date2")).click();
-       System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
+        System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
 
-        if(driver.findElement(By.id("Div1")).getAttribute("style").contains("1"))
-        {
+        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("1")) {
             System.out.println("Is enabled");
             Assert.assertTrue(true);
-        }else {
+        } else {
             Assert.assertTrue(false);
         }
 
