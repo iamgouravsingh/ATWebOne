@@ -12,7 +12,11 @@ public class FrameTest {
 
         driver.get("https://jqueryui.com/droppable/");
 
-        driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[class='demo-frame']")));
+        System.out.println(driver.findElements(By.tagName("iframe")).size());
+
+        driver.switchTo().frame(0);
+
+        //driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[class='demo-frame']")));
 
         driver.findElement(By.id("draggable")).click();
 
@@ -22,7 +26,9 @@ public class FrameTest {
 
         WebElement destination = driver.findElement(By.id("droppable"));
 
-        a.dragAndDrop(source,destination).build().perform();
+        a.dragAndDrop(source, destination).build().perform();
+
+        driver.switchTo().defaultContent();
 
 
     }
