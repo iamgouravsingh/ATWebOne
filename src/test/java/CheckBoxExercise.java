@@ -6,6 +6,7 @@ import org.testng.Assert;
 public class CheckBoxExercise {
     public static void main(String[] args) {
 
+
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
         driver.getCurrentUrl();

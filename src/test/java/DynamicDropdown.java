@@ -5,7 +5,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-public class DynamicDropdown {
+public class        DynamicDropdown {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
